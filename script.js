@@ -1,4 +1,14 @@
+// Alteramos o Projetor para uma oferta de Combo e adicionamos suporte a cronômetro
 const produtos = [
+    {
+        nome: "Projetor Magcubic Smart Android 4K + Tela de Brinde",
+        link: "https://s.shopee.com.br/5VTLvBCkYr",
+        imagem: "static/images/735017938_1325787876430449_5671435626027520904_n.jpg",
+        precoAntigo: "R$ 599,00",
+        precoNovo: "R$ 287,00",
+        tag: "⚡ COMBO EXCLUSIVO: LEVE 2 ITENS",
+        estrelas: "⭐⭐⭐⭐⭐ (4.7k)"
+    },
     {
         nome: "Cozidor de Ovos Elétrico Express",
         link: "https://s.shopee.com.br/8V6xUfB0O9",
@@ -24,7 +34,7 @@ const produtos = [
         precoAntigo: "R$ 149,90",
         precoNovo: "R$ 79,90",
         tag: "⚡ OFERTA DO DIA",
-        estrelas: "⭐⭐⭐⭐⭐ (319)"
+        stars: "⭐⭐⭐⭐⭐ (319)"
     },
     {
         nome: "Kit Potes de Tempero Organizador Elegance",
@@ -43,15 +53,6 @@ const produtos = [
         precoNovo: "R$ 19,99",
         tag: "🎯 RESTAM 4 UNID.",
         estrelas: "⭐⭐⭐⭐⭐ (2.1k)"
-    },
-    {
-        nome: "Projetor Magcubic Smart Android 4K HDR",
-        link: "https://s.shopee.com.br/5VTLvBCkYr",
-        imagem: "static/images/735017938_1325787876430449_5671435626027520904_n.jpg",
-        precoAntigo: "R$ 599,00",
-        precoNovo: "R$ 287,00",
-        tag: "👑 PREFERIDO DO TIKTOK",
-        estrelas: "⭐⭐⭐⭐⭐ (4.7k)"
     }
 ];
 
@@ -81,9 +82,32 @@ function carregarProdutos() {
                 </a>
             </div>
         `;
-        
         container.appendChild(card);
     });
+
+    // Inicia o cronômetro de escassez igual ao do vídeo do Balian
+    iniciarCronometro();
+}
+
+function iniciarCronometro() {
+    let tempo = 11 * 3600 + 36 * 60; // 11 horas e 36 minutos (referência do vídeo)
+    const display = document.getElementById('countdown');
+    
+    setInterval(() => {
+        let horas = Math.floor(tempo / 3600);
+        let minutos = Math.floor((tempo % 3600) / 60);
+        let segundos = tempo % 60;
+
+        horas = horas < 10 ? '0' + horas : horas;
+        minutos = minutos < 10 ? '0' + minutos : minutos;
+        segundos = segundos < 10 ? '0' + segundos : segundos;
+
+        if (display) {
+            display.textContent = `${horas}:${minutos}:${segundos}`;
+        }
+        
+        if (--tempo < 0) tempo = 11 * 3600; // Reseta para não zerar
+    }, 1000);
 }
 
 document.addEventListener('DOMContentLoaded', carregarProdutos);

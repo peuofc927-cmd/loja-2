@@ -19,13 +19,13 @@ const produtos = [
         estrelas: "⭐⭐⭐⭐⭐ (1.4k)"
     },
     {
-        nome: "Capa de Cama Soft Confort Anti-Alérgica",
+        nome: "Capa de Cama Soft Confort Premium (Campeã de Vendas)",
         link: "https://s.shopee.com.br/6Aj2iVPFXd",
-        imagem: "static/images/730436918_1369810668392212_6336537957047394657_n.jpg",
+        imagem: "static/images/73436918_1369810668392212_6336537957047394657_n.jpg",
         precoAntigo: "R$ 189,90",
         precoNovo: "R$ 97,80",
-        tag: "✨ TENDÊNCIA",
-        estrelas: "⭐⭐⭐⭐⭐ (842)"
+        tag: "⭐ +800 MIL UNIDADES VENDIDAS",
+        estrelas: "⭐⭐⭐⭐⭐ (4.9)"
     },
     {
         nome: "Kit Café da Manhã Black Premium",

@@ -5,7 +5,7 @@ const produtos = [
         link: "https://s.shopee.com.br/5VTLvBCkYr",
         imagem: "static/images/735017938_1325787876430449_5671435626027520904_n.jpg",
         precoAntigo: "R$ 599,00",
-        precoNovo: "R$ 287,00",
+        precoNovo: "R$ 207,00",
         tag: "⚡ COMBO EXCLUSIVO: LEVE 2 ITENS",
         estrelas: "⭐⭐⭐⭐⭐ (4.7k)"
     },
@@ -14,7 +14,7 @@ const produtos = [
         link: "https://s.shopee.com.br/8V6xUfB0O9",
         imagem: "static/images/730015024_985461697620096_4555371164429736135_n.jpg",
         precoAntigo: "R$ 79,90",
-        precoNovo: "R$ 34,90",
+        precoNovo: "R$ 29,90",
         tag: "🔥 MAIS VENDIDO",
         estrelas: "⭐⭐⭐⭐⭐ (1.4k)"
     },
@@ -22,8 +22,8 @@ const produtos = [
         nome: "Capa de Cama Soft Confort Premium (Campeã de Vendas)",
         link: "https://s.shopee.com.br/6Aj2iVPFXd",
         imagem: "static/images/730436918_1369810668392212_6336537957047394657_n.jpg",
-        precoAntigo: "R$ 189,90",
-        precoNovo: "R$ 97,80",
+        precoAntigo: "R$ 59,90",
+        precoNovo: "R$ 13,80",
         tag: "⭐ +800 MIL UNIDADES VENDIDAS",
         estrelas: "⭐⭐⭐⭐⭐ (4.9)"
     },
@@ -32,7 +32,7 @@ const produtos = [
         link: "https://s.shopee.com.br/6pyjVec8Xo",
         imagem: "static/images/732001304_4484133711907969_2441535533977106852_n.jpg",
         precoAntigo: "R$ 149,90",
-        precoNovo: "R$ 79,90",
+        precoNovo: "R$ 142,90",
         tag: "⚡ OFERTA DO DIA",
         stars: "⭐⭐⭐⭐⭐ (319)"
     },
@@ -41,7 +41,7 @@ const produtos = [
         link: "https://s.shopee.com.br/BRpZR0hzu",
         imagem: "static/images/732116378_1552200189774246_6808954785001161300_n.jpg",
         precoAntigo: "R$ 99,90",
-        precoNovo: "R$ 45,90",
+        precoNovo: "R$ 28,90",
         tag: "🏠 UTILIDADE",
         estrelas: "⭐⭐⭐⭐✨ (520)"
     },
